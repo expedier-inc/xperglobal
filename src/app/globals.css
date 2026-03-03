@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-green: #2D8C3C;
+  --color-brand-green-dark: #1F6B2B;
+  --color-brand-green-light: #4CAF50;
+  --color-brand-orange: #F5A623;
+  --color-brand-orange-dark: #E09000;
+  --color-brand-orange-light: #FFB74D;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
