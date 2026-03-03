@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Our Impact - XpderGlobal',
-  description: 'Financial literacy, community programs, and measurable impact across Nigeria.',
+  description: 'Financial literacy and community programs across Nigeria.',
 };
 
 export default function Impact() {
@@ -14,41 +14,45 @@ export default function Impact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              Impact & Financial Literacy
+              Our Impact
             </h1>
             <p className="text-xl text-green-100">
-              We measure success not just in transactions, but in lives changed. 
-              Financial inclusion is about education, empowerment, and opportunity.
+              Financial inclusion isn&apos;t just about access — it&apos;s about understanding. 
+              We invest in education and community programs alongside our services.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Impact Numbers */}
+      {/* Impact Overview */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              2020 – 2026: Our Journey So Far
+              Growing Across Nigeria
             </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Since 2020, we&apos;ve expanded from Lagos to serve communities across 
+              multiple regions of Nigeria.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <p className="text-5xl font-bold text-brand-green mb-2">15+</p>
-              <p className="text-gray-600">States with active operations</p>
+            <div className="text-center bg-gray-50 rounded-2xl p-8">
+              <p className="text-4xl font-bold text-brand-green mb-2">Expanding</p>
+              <p className="text-gray-600">Geographic reach across regions</p>
             </div>
-            <div className="text-center">
-              <p className="text-5xl font-bold text-brand-orange mb-2">50K+</p>
-              <p className="text-gray-600">Wallets issued to Nigerians</p>
+            <div className="text-center bg-gray-50 rounded-2xl p-8">
+              <p className="text-4xl font-bold text-brand-orange mb-2">Thousands</p>
+              <p className="text-gray-600">Active wallet users</p>
             </div>
-            <div className="text-center">
-              <p className="text-5xl font-bold text-brand-green mb-2">12K+</p>
-              <p className="text-gray-600">Financial literacy workshop attendees</p>
+            <div className="text-center bg-gray-50 rounded-2xl p-8">
+              <p className="text-4xl font-bold text-brand-green mb-2">Growing</p>
+              <p className="text-gray-600">Financial literacy reach</p>
             </div>
-            <div className="text-center">
-              <p className="text-5xl font-bold text-brand-orange mb-2">2,500+</p>
-              <p className="text-gray-600">Active agents across Nigeria</p>
+            <div className="text-center bg-gray-50 rounded-2xl p-8">
+              <p className="text-4xl font-bold text-brand-orange mb-2">Nationwide</p>
+              <p className="text-gray-600">Agent network presence</p>
             </div>
           </div>
         </div>
@@ -64,34 +68,52 @@ export default function Impact() {
                 Financial Literacy Programs
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Access to financial services means nothing without understanding. 
-                Our programs teach practical money skills to communities that 
-                traditional education often overlooks.
+                Access to financial services is only valuable when people understand 
+                how to use them. Our education initiatives reach communities that 
+                traditional financial education often misses.
               </p>
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">📚 Curriculum Topics</h4>
+                  <h4 className="font-semibold text-gray-900 mb-2">Topics We Cover</h4>
                   <ul className="grid grid-cols-2 gap-2 text-gray-600 text-sm">
-                    <li>• Savings circles (Ajo/Esusu)</li>
-                    <li>• Digital bookkeeping</li>
-                    <li>• Safe remittance practices</li>
-                    <li>• Fraud awareness</li>
-                    <li>• Business record-keeping</li>
-                    <li>• Mobile money basics</li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-brand-green rounded-full mr-2"></span>
+                      Savings circles (Ajo/Esusu)
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-brand-green rounded-full mr-2"></span>
+                      Digital bookkeeping
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-brand-green rounded-full mr-2"></span>
+                      Safe remittance practices
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-brand-green rounded-full mr-2"></span>
+                      Fraud awareness
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-brand-green rounded-full mr-2"></span>
+                      Business record-keeping
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-brand-green rounded-full mr-2"></span>
+                      Mobile money basics
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <h3 className="text-xl font-bold text-gray-900 mb-6">Program Formats</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-6">How We Reach People</h3>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <div className="w-12 h-12 bg-brand-green/10 rounded-lg flex items-center justify-center mr-4">
                     <span className="text-xl">🏫</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Community Workshops</h4>
-                    <p className="text-gray-600 text-sm">In-person sessions at markets, churches, and community centers</p>
+                    <h4 className="font-semibold text-gray-900">Community Sessions</h4>
+                    <p className="text-gray-600 text-sm">In-person training at markets, churches, and community centers</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -99,17 +121,17 @@ export default function Impact() {
                     <span className="text-xl">📻</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Community Radio</h4>
-                    <p className="text-gray-600 text-sm">Weekly programs in Yoruba, Hausa, and Pidgin</p>
+                    <h4 className="font-semibold text-gray-900">Radio Programs</h4>
+                    <p className="text-gray-600 text-sm">Broadcasts in Yoruba, Hausa, and Pidgin on local stations</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <div className="w-12 h-12 bg-brand-green/10 rounded-lg flex items-center justify-center mr-4">
-                    <span className="text-xl">📱</span>
+                    <span className="text-xl">👥</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Mobile Classrooms</h4>
-                    <p className="text-gray-600 text-sm">Vans equipped to bring training to remote villages</p>
+                    <h4 className="font-semibold text-gray-900">Agent Training</h4>
+                    <p className="text-gray-600 text-sm">Our agents share knowledge daily in their communities</p>
                   </div>
                 </div>
               </div>
@@ -118,59 +140,56 @@ export default function Impact() {
         </div>
       </section>
 
-      {/* CSR Programs */}
+      {/* Community Programs */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Community Programs
+              Community Initiatives
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Beyond our core business, we invest in the communities we serve.
+              We believe in giving back to the communities we serve.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 rounded-xl p-6">
               <div className="text-3xl mb-4">👩‍💼</div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Women Traders Program</h3>
-              <p className="text-gray-600 mb-4">
-                Supporting women-led businesses with training, mentorship, and 
-                access to working capital. 3,000+ women enrolled since 2021.
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Women in Trade</h3>
+              <p className="text-gray-600">
+                Supporting women traders with financial tools and business guidance. 
+                Many of our earliest users were market women who inspired our mission.
               </p>
-              <p className="text-sm text-brand-green font-medium">Active in 8 states</p>
             </div>
             <div className="bg-gray-50 rounded-xl p-6">
               <div className="text-3xl mb-4">🎓</div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">STEM Scholarships</h3>
-              <p className="text-gray-600 mb-4">
-                Annual scholarships for students from underserved communities 
-                pursuing technology and finance education.
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Youth Programs</h3>
+              <p className="text-gray-600">
+                Teaching young Nigerians about digital finance, savings habits, 
+                and responsible money management.
               </p>
-              <p className="text-sm text-brand-green font-medium">50 scholars annually</p>
             </div>
             <div className="bg-gray-50 rounded-xl p-6">
               <div className="text-3xl mb-4">🌾</div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Farmers Cooperative Support</h3>
-              <p className="text-gray-600 mb-4">
-                Helping agricultural cooperatives digitize payments, manage 
-                group savings, and access markets.
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Cooperative Support</h3>
+              <p className="text-gray-600">
+                Helping agricultural and trade cooperatives digitize their operations 
+                and manage group finances transparently.
               </p>
-              <p className="text-sm text-brand-green font-medium">120+ cooperatives</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Downloadable Resources */}
+      {/* Free Resources */}
       <section className="py-16 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Free Resources
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            Download our financial literacy guides — available in English, 
-            Yoruba, Hausa, and Pidgin.
+            Download our financial literacy guides — available in English, Yoruba, 
+            Hausa, and Pidgin.
           </p>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
@@ -193,19 +212,22 @@ export default function Impact() {
         </div>
       </section>
 
-      {/* Annual Report CTA */}
+      {/* CTA */}
       <section className="py-16 bg-brand-green">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Read Our Impact Report
+            Want to Partner on Community Programs?
           </h2>
           <p className="text-green-100 mb-8 max-w-xl mx-auto">
-            Our annual report details every community reached, every workshop 
-            held, and every life changed. Full transparency.
+            NGOs, government agencies, and community organizations — let&apos;s work together 
+            to expand financial literacy across Nigeria.
           </p>
-          <button className="inline-block bg-brand-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-orange-dark transition-colors">
-            Download 2025 Report
-          </button>
+          <Link
+            href="/contact"
+            className="inline-block bg-brand-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-orange-dark transition-colors"
+          >
+            Get in Touch
+          </Link>
         </div>
       </section>
     </>

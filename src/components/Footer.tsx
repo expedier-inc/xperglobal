@@ -2,11 +2,17 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const footerLinks = {
-  solutions: [
-    { name: 'Rural Wallet Network', href: '/solutions#wallet' },
-    { name: 'Virtual Accounts', href: '/solutions#accounts' },
-    { name: 'Bill Payments', href: '/solutions#bills' },
-    { name: 'MSME Advisory', href: '/solutions#advisory' },
+  personal: [
+    { name: 'Digital Wallets', href: '/solutions#wallet' },
+    { name: 'Send Money', href: '/personal' },
+    { name: 'Pay Bills', href: '/solutions#bills' },
+    { name: 'Open a Wallet', href: '/open-wallet' },
+  ],
+  business: [
+    { name: 'Collections', href: '/business' },
+    { name: 'Payouts', href: '/business' },
+    { name: 'API Integration', href: '/partners' },
+    { name: 'Partner With Us', href: '/partners' },
   ],
   company: [
     { name: 'About Us', href: '/about' },
@@ -14,10 +20,10 @@ const footerLinks = {
     { name: 'Compliance', href: '/compliance' },
     { name: 'Future Careers', href: '/careers' },
   ],
-  resources: [
-    { name: 'For Communities', href: '/communities' },
-    { name: 'For Partners', href: '/partners' },
-    { name: 'Agent Toolkit', href: '/partners#toolkit' },
+  support: [
+    { name: 'Contact Us', href: '/contact' },
+    { name: 'Find an Agent', href: '/communities' },
+    { name: 'Trust Center', href: '/compliance#trust' },
     { name: 'Financial Literacy', href: '/impact#literacy' },
   ],
 };
@@ -26,9 +32,9 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           {/* Brand */}
-          <div className="lg:col-span-2">
+          <div className="col-span-2">
             <Image
               src="/logo.png"
               alt="XpderGlobal"
@@ -36,7 +42,7 @@ export default function Footer() {
               height={42}
               className="h-10 w-auto brightness-0 invert mb-4"
             />
-            <p className="text-gray-400 mb-4 max-w-sm">
+            <p className="text-gray-400 mb-4 max-w-xs text-sm">
               Bridging Nigeria&apos;s financial gap since 2020. Empowering traders, 
               communities, and businesses with accessible financial services.
             </p>
@@ -44,18 +50,36 @@ export default function Footer() {
               <p className="font-semibold text-white">XPDER GLOBAL LIMITED</p>
               <p>Plot 6, House B, Bank Road</p>
               <p>Satellite Town, Lagos</p>
-              <p className="mt-2">+234 806 419 7619</p>
-              <p>expedier.inc@gmail.com</p>
+              <p className="mt-2">
+                <a href="tel:+2348064197619" className="hover:text-brand-orange">+234 806 419 7619</a>
+              </p>
+              <p>
+                <a href="mailto:expedier.inc@gmail.com" className="hover:text-brand-orange">expedier.inc@gmail.com</a>
+              </p>
             </div>
           </div>
 
-          {/* Solutions */}
+          {/* Personal */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Solutions</h3>
+            <h3 className="font-semibold text-sm mb-4">Personal</h3>
             <ul className="space-y-2">
-              {footerLinks.solutions.map((link) => (
+              {footerLinks.personal.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-gray-400 hover:text-brand-orange transition-colors">
+                  <Link href={link.href} className="text-gray-400 hover:text-brand-orange transition-colors text-sm">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Business */}
+          <div>
+            <h3 className="font-semibold text-sm mb-4">Business</h3>
+            <ul className="space-y-2">
+              {footerLinks.business.map((link) => (
+                <li key={link.name}>
+                  <Link href={link.href} className="text-gray-400 hover:text-brand-orange transition-colors text-sm">
                     {link.name}
                   </Link>
                 </li>
@@ -65,11 +89,11 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Company</h3>
+            <h3 className="font-semibold text-sm mb-4">Company</h3>
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-gray-400 hover:text-brand-orange transition-colors">
+                  <Link href={link.href} className="text-gray-400 hover:text-brand-orange transition-colors text-sm">
                     {link.name}
                   </Link>
                 </li>
@@ -77,13 +101,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Resources */}
+          {/* Support */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Resources</h3>
+            <h3 className="font-semibold text-sm mb-4">Support</h3>
             <ul className="space-y-2">
-              {footerLinks.resources.map((link) => (
+              {footerLinks.support.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-gray-400 hover:text-brand-orange transition-colors">
+                  <Link href={link.href} className="text-gray-400 hover:text-brand-orange transition-colors text-sm">
                     {link.name}
                   </Link>
                 </li>

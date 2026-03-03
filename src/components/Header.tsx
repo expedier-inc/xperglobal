@@ -5,13 +5,11 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 const navigation = [
-  { name: 'Home', href: '/' },
+  { name: 'Personal', href: '/personal' },
+  { name: 'Business', href: '/business' },
   { name: 'Solutions', href: '/solutions' },
-  { name: 'Communities', href: '/communities' },
   { name: 'Partners', href: '/partners' },
-  { name: 'Impact', href: '/impact' },
   { name: 'About', href: '/about' },
-  { name: 'Contact', href: '/contact' },
 ];
 
 export default function Header() {
@@ -44,7 +42,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href="/open-wallet"
               className="bg-brand-green text-white px-5 py-2 rounded-lg hover:bg-brand-green-dark transition-colors font-medium"
             >
               Open a Wallet
@@ -80,7 +78,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href="/open-wallet"
               className="block mt-4 bg-brand-green text-white px-5 py-2 rounded-lg text-center font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
