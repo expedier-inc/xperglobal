@@ -215,7 +215,7 @@ export default function Communities() {
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Agent Requirements</h3>
               <ul className="space-y-3 text-gray-600 mb-6">
-                <li>• Valid government ID (NIN, Voter&apos;s Card)</li>
+                <li>• Valid government ID (Voter&apos;s Card, Driver&apos;s License)</li>
                 <li>• Smartphone with internet access</li>
                 <li>• Fixed location (shop, kiosk, or home)</li>
                 <li>• Minimum float of ₦50,000</li>

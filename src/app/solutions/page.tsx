@@ -67,7 +67,7 @@ export default function Solutions() {
                   </svg>
                   <div>
                     <strong className="text-gray-900">Instant account opening</strong>
-                    <p className="text-gray-600">Sign up with just your phone number and BVN</p>
+                    <p className="text-gray-600">Sign up with just your phone number</p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -99,7 +99,7 @@ export default function Solutions() {
                 <p className="text-3xl font-bold text-gray-900 mb-4">₦ 250,000.00</p>
                 <div className="bg-gray-50 rounded-lg p-4">
                   <p className="text-xs text-gray-500 mb-1">Account Number</p>
-                  <p className="font-mono text-gray-900">1234567890 • Providus</p>
+                  <p className="font-mono text-gray-900">1234567890</p>
                 </div>
               </div>
             </div>
@@ -144,8 +144,7 @@ export default function Solutions() {
                 Bank-Grade Infrastructure
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Powered by Providus Bank with full BVN integration. 
-                Real account numbers, instant notifications, seamless settlement.
+                Powered by tier one bank partners with instant notifications and seamless settlement.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white rounded-lg p-4">

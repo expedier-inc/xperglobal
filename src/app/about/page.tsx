@@ -128,7 +128,7 @@ export default function About() {
                   <span className="text-white font-bold">21</span>
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2">2021</h3>
-                <p className="text-gray-600 text-sm">Providus partnership. Virtual accounts live.</p>
+                <p className="text-gray-600 text-sm">Virtual accounts live.</p>
               </div>
               <div className="bg-white rounded-xl p-6 text-center shadow-sm">
                 <div className="w-12 h-12 bg-brand-green rounded-full flex items-center justify-center mx-auto mb-4">
@@ -165,11 +165,11 @@ export default function About() {
             <div className="bg-gray-50 rounded-xl p-8 text-center">
               <div className="w-16 h-16 bg-brand-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Providus Bank</h3>
-              <p className="text-gray-600 text-sm">Virtual accounts & banking rails</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Paystack</h3>
+              <p className="text-gray-600 text-sm">Payment processing & collections</p>
             </div>
             <div className="bg-gray-50 rounded-xl p-8 text-center">
               <div className="w-16 h-16 bg-brand-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -187,7 +187,7 @@ export default function About() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Licensed Partners</h3>
-              <p className="text-gray-600 text-sm">Regulated FX & payment providers</p>
+              <p className="text-gray-600 text-sm">Trusted payment providers</p>
             </div>
           </div>
         </div>

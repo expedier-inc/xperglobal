@@ -45,9 +45,8 @@ export default function Compliance() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Licensed Partners</h3>
                 <p className="text-gray-600">
                   We don&apos;t operate in regulatory grey areas. Our banking services 
-                  are provided through Providus Bank (licensed by CBN). Payment services 
-                  are powered by Paga (licensed PSP). Cross-border settlement is handled 
-                  through regulated FX partners — we don&apos;t trade foreign exchange ourselves.
+                  are provided through licensed banking partners. Payment services 
+                  are powered by Paga (licensed PSP) and other trusted payment providers.
                 </p>
               </div>
 
@@ -90,7 +89,7 @@ export default function Compliance() {
                 <span className="text-xl font-bold text-white">2</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Tier 2 — Standard</h3>
-              <p className="text-gray-600 mb-4">BVN verification</p>
+              <p className="text-gray-600 mb-4">ID verification</p>
               <ul className="text-sm text-gray-500 space-y-2">
                 <li>• Single transaction limit: ₦200,000</li>
                 <li>• Daily limit: ₦500,000</li>

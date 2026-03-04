@@ -96,13 +96,13 @@ export default function Partners() {
             <div className="bg-gray-50 rounded-2xl p-8 text-center">
               <div className="w-16 h-16 bg-brand-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Providus Bank</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Paystack</h3>
               <p className="text-gray-600 text-sm">
-                Our banking partner for virtual accounts and core banking infrastructure. 
-                CBN-licensed and fully regulated.
+                Payment processing and collections infrastructure. 
+                Fast, reliable payment acceptance.
               </p>
             </div>
             <div className="bg-gray-50 rounded-2xl p-8 text-center">
@@ -309,7 +309,7 @@ export default function Partners() {
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start">
                   <span className="text-brand-orange mr-2 mt-1">•</span>
-                  Valid government ID (NIN, Voter&apos;s Card, etc.)
+                  Valid government ID (Voter&apos;s Card, Driver&apos;s License, etc.)
                 </li>
                 <li className="flex items-start">
                   <span className="text-brand-orange mr-2 mt-1">•</span>

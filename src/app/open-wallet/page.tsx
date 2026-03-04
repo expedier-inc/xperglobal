@@ -9,7 +9,6 @@ export default function OpenWallet() {
     lastName: '',
     email: '',
     phone: '',
-    bvn: '',
     dateOfBirth: '',
     gender: '',
     state: '',
@@ -44,7 +43,6 @@ Location:
 - Address: ${formData.address}
 
 Verification:
-- BVN: ${formData.bvn}
 - ID Type: ${formData.idType}
 - ID Number: ${formData.idNumber}
 
@@ -275,22 +273,6 @@ Submitted: ${new Date().toLocaleString()}
                 Verification
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="md:col-span-2">
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    BVN (Bank Verification Number) <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    name="bvn"
-                    required
-                    maxLength={11}
-                    value={formData.bvn}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-green focus:border-transparent"
-                    placeholder="11-digit BVN"
-                  />
-                  <p className="text-sm text-gray-500 mt-1">Your BVN is required for account verification</p>
-                </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     ID Type <span className="text-red-500">*</span>
@@ -303,7 +285,6 @@ Submitted: ${new Date().toLocaleString()}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-green focus:border-transparent"
                   >
                     <option value="">Select ID type</option>
-                    <option value="NIN">National ID (NIN)</option>
                     <option value="Voters Card">Voter&apos;s Card</option>
                     <option value="Drivers License">Driver&apos;s License</option>
                     <option value="International Passport">International Passport</option>
