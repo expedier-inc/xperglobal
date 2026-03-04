@@ -47,8 +47,14 @@ export default function About() {
                 economies. But traditional banking doesn&apos;t reach everyone. We&apos;re 
                 changing that with technology.
               </p>
+              <p className="text-lg text-gray-600 mb-6">
+                We started as Expedier Systems Inc, focused on making payments easier 
+                for businesses and individuals. As we grew and our vision expanded, 
+                we became <strong>Xpder Global Limited</strong> — a name that reflects 
+                our ambition to serve Nigerians everywhere.
+              </p>
               <p className="text-lg text-gray-600">
-                Our platform combines digital wallets, instant transfers, and a 
+                Today, our platform combines digital wallets, instant transfers, and a 
                 physical agent network to deliver payment services that work — 
                 in cities and towns across Nigeria.
               </p>
