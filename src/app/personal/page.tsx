@@ -264,26 +264,23 @@ export default function Personal() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              Simple, Transparent Fees
+              Simple, Transparent Pricing
             </h2>
-            <p className="text-lg text-gray-600 mb-12">
-              No hidden charges. No monthly fees. You only pay when you transact.
+            <p className="text-lg text-gray-600 mb-8">
+              No hidden charges. No monthly fees. No surprises.
             </p>
             <div className="bg-gray-50 rounded-2xl p-8">
-              <div className="grid md:grid-cols-3 gap-8">
-                <div>
-                  <p className="text-3xl font-bold text-brand-green">₦0</p>
-                  <p className="text-gray-600 mt-2">Account opening</p>
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-brand-green">₦10</p>
-                  <p className="text-gray-600 mt-2">Transfers up to ₦5,000</p>
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-brand-green">₦25</p>
-                  <p className="text-gray-600 mt-2">Transfers above ₦5,000</p>
+              <div className="flex items-center justify-center mb-4">
+                <div className="w-16 h-16 bg-brand-green rounded-full flex items-center justify-center">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
               </div>
+              <p className="text-2xl font-bold text-gray-900 mb-2">Free Account Opening</p>
+              <p className="text-gray-600">
+                Open your wallet at no cost. Only pay small fees when you transact.
+              </p>
             </div>
           </div>
         </div>
