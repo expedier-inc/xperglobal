@@ -27,8 +27,8 @@ export default function Partners() {
                 <span className="text-brand-orange">Payment Rails</span>
               </h1>
               <p className="text-xl text-gray-300 mb-8">
-                Integrate wallets, collections, and disbursements into your platform. 
-                RESTful APIs, real-time webhooks, sandbox environment.
+                Partner with us to extend your reach, integrate our payment infrastructure, 
+                or build on our platform. APIs coming soon.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
@@ -38,36 +38,42 @@ export default function Partners() {
                   Talk to Sales
                 </Link>
                 <a
-                  href="#api"
+                  href="mailto:expedier.inc@gmail.com?subject=Partnership Inquiry"
                   className="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors"
                 >
-                  View API Docs
+                  Email Us
                 </a>
               </div>
             </div>
             <div className="hidden lg:block">
-              <div className="bg-gray-800 rounded-2xl p-6 font-mono text-sm">
-                <div className="flex items-center space-x-2 mb-4">
-                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-brand-green/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-8 h-8 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Partnership Opportunities</h3>
+                  <p className="text-gray-400 text-sm mb-6">Banks • Enterprises • Fintechs • Developers</p>
+                  <div className="grid grid-cols-2 gap-4 text-sm">
+                    <div className="bg-white/5 rounded-lg p-3">
+                      <p className="font-semibold">Agent Banking</p>
+                      <p className="text-gray-400 text-xs">Extend your reach</p>
+                    </div>
+                    <div className="bg-white/5 rounded-lg p-3">
+                      <p className="font-semibold">White Label</p>
+                      <p className="text-gray-400 text-xs">Your brand, our rails</p>
+                    </div>
+                    <div className="bg-white/5 rounded-lg p-3">
+                      <p className="font-semibold">Settlement</p>
+                      <p className="text-gray-400 text-xs">Same-day available</p>
+                    </div>
+                    <div className="bg-white/5 rounded-lg p-3">
+                      <p className="font-semibold">API Access</p>
+                      <p className="text-gray-400 text-xs">Coming soon</p>
+                    </div>
+                  </div>
                 </div>
-                <pre className="text-green-400 overflow-x-auto"><code>{`POST /api/v1/transfers
-{
-  "amount": 50000,
-  "recipient": {
-    "account": "0123456789",
-    "bank": "058"
-  },
-  "reference": "TXN_abc123"
-}
-
-// Response: 200 OK
-{
-  "status": "success",
-  "transaction_id": "xpd_tx_...",
-  "settled_at": "2026-03-03T..."
-}`}</code></pre>
               </div>
             </div>
           </div>
@@ -147,69 +153,34 @@ export default function Partners() {
       {/* API Overview */}
       <section id="api" className="py-16 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="text-brand-orange font-semibold uppercase tracking-wide text-sm">API</span>
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mt-2 mb-6">
-                Simple, Powerful APIs
-              </h2>
-              <p className="text-lg text-gray-600 mb-8">
-                RESTful endpoints, JSON responses, comprehensive documentation. 
-                Get up and running in hours, not weeks.
+          <div className="max-w-3xl mx-auto text-center">
+            <span className="inline-block bg-brand-orange/10 text-brand-orange px-4 py-1 rounded-full text-sm font-medium mb-6">
+              Coming Soon
+            </span>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+              API Integration
+            </h2>
+            <p className="text-lg text-gray-600 mb-8">
+              We&apos;re building powerful APIs to help you integrate wallets, transfers, 
+              and bill payments into your platform. RESTful endpoints, webhooks, 
+              and comprehensive documentation — coming soon.
+            </p>
+            <div className="bg-white rounded-2xl p-8 shadow-sm">
+              <p className="text-gray-600 mb-4">
+                Interested in early access or partnership opportunities?
               </p>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <div className="w-10 h-10 bg-brand-green rounded-lg flex items-center justify-center mr-4">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <span className="text-gray-700">Create wallets and virtual accounts</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-10 h-10 bg-brand-green rounded-lg flex items-center justify-center mr-4">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <span className="text-gray-700">Initiate transfers to any bank</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-10 h-10 bg-brand-green rounded-lg flex items-center justify-center mr-4">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <span className="text-gray-700">Process bill payments</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-10 h-10 bg-brand-green rounded-lg flex items-center justify-center mr-4">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <span className="text-gray-700">Receive real-time webhooks</span>
-                </div>
-              </div>
-            </div>
-            <div className="bg-gray-900 rounded-2xl p-6 text-sm overflow-x-auto">
-              <pre className="text-green-400 font-mono"><code>{`// Create Virtual Account
-POST /api/v1/accounts
-{
-  "customer_id": "cust_123",
-  "bvn": "12345678901"
-}
-
-// Webhook: Payment Received
-{
-  "event": "payment.received",
-  "data": {
-    "account": "1234567890",
-    "amount": 50000,
-    "sender": "John Doe",
-    "reference": "TRF/XYZ123"
-  }
-}`}</code></pre>
+              <a 
+                href="mailto:expedier.inc@gmail.com?subject=API Integration Inquiry"
+                className="inline-flex items-center text-xl font-bold text-brand-green hover:text-brand-green-dark transition-colors"
+              >
+                <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                expedier.inc@gmail.com
+              </a>
+              <p className="text-sm text-gray-500 mt-4">
+                We&apos;ll reach out with details as we get closer to launch.
+              </p>
             </div>
           </div>
         </div>
