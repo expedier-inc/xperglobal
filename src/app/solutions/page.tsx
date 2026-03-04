@@ -22,12 +22,12 @@ export default function Solutions() {
               Our Products
             </span>
             <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
-              Payment Infrastructure <br />
-              <span className="text-brand-orange">Built for Nigeria</span>
+              Simple Financial Tools <br />
+              <span className="text-brand-orange">For Everyday Nigerians</span>
             </h1>
             <p className="text-xl text-gray-300 mb-8">
-              From digital wallets to enterprise APIs — everything you need to 
-              move money faster, safer, and smarter across Nigeria.
+              Digital wallets, instant transfers, bill payments, and business solutions — 
+              everything you need to manage your money and grow your business.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -37,10 +37,10 @@ export default function Solutions() {
                 Open a Wallet
               </Link>
               <Link
-                href="/partners"
+                href="/business"
                 className="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors"
               >
-                API Documentation
+                Business Solutions
               </Link>
             </div>
           </div>
