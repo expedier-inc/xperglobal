@@ -18,14 +18,14 @@ export default function Header() {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex items-center">
             <Image
               src="/logo.png"
               alt="XpderGlobal"
-              width={180}
-              height={48}
-              className="h-10 w-auto"
+              width={200}
+              height={56}
+              className="h-12 w-auto"
               priority
             />
           </Link>
@@ -43,7 +43,7 @@ export default function Header() {
             ))}
             <Link
               href="/open-wallet"
-              className="bg-brand-green text-white px-5 py-2 rounded-lg hover:bg-brand-green-dark transition-colors font-medium"
+              className="bg-brand-green text-white px-6 py-2.5 rounded-lg hover:bg-brand-green-dark transition-colors font-semibold"
             >
               Open a Wallet
             </Link>

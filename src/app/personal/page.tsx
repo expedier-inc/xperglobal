@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Personal Banking - XpderGlobal',
-  description: 'Digital wallets, payments, and financial services for individuals across Nigeria.',
+  description: 'Digital wallets, instant transfers, and bill payments for Nigerians everywhere.',
 };
 
 export default function Personal() {
@@ -21,28 +21,55 @@ export default function Personal() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="inline-block bg-brand-orange/20 text-brand-orange px-4 py-1 rounded-full text-sm font-medium mb-6">
-                For Individuals
+                Digital Banking for Everyone
               </span>
               <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
-                Your Money, Your Way — Anywhere in Nigeria
+                Send. Receive. Pay Bills. <br />
+                <span className="text-brand-orange">All in One Wallet.</span>
               </h1>
               <p className="text-xl text-gray-300 mb-8">
-                Send money, pay bills, receive payments — all from your phone. 
-                No bank branch visits. No hidden fees. Just simple, secure financial services.
+                Open a free account in minutes. Get your own account number. 
+                Transfer instantly to any bank in Nigeria. No branches. No queues. 
+                Just fast, secure digital banking.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/open-wallet"
                   className="bg-brand-orange text-white px-8 py-4 rounded-xl font-semibold hover:bg-brand-orange-dark transition-colors text-center text-lg"
                 >
-                  Open Your Wallet →
+                  Open Free Account →
                 </Link>
                 <Link
                   href="/solutions"
                   className="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors text-center"
                 >
-                  See How It Works
+                  How It Works
                 </Link>
+              </div>
+              
+              {/* Trust badges */}
+              <div className="mt-10 pt-8 border-t border-white/10">
+                <p className="text-gray-400 text-sm mb-4">Trusted infrastructure</p>
+                <div className="flex flex-wrap items-center gap-6 text-gray-400">
+                  <span className="flex items-center text-sm">
+                    <svg className="w-5 h-5 text-brand-green mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Providus Bank
+                  </span>
+                  <span className="flex items-center text-sm">
+                    <svg className="w-5 h-5 text-brand-green mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    BVN Verified
+                  </span>
+                  <span className="flex items-center text-sm">
+                    <svg className="w-5 h-5 text-brand-green mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    CBN Compliant
+                  </span>
+                </div>
               </div>
             </div>
             <div className="hidden lg:block">
@@ -93,15 +120,15 @@ export default function Personal() {
         </div>
       </section>
 
-      {/* What You Can Do */}
+      {/* Key Features */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Everything You Need in One Wallet
+              Everything You Need in One App
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              No more multiple apps. No more confusion. Just one wallet that does it all.
+              No multiple apps. No confusion. One wallet that handles all your daily financial needs.
             </p>
           </div>
 
@@ -112,9 +139,9 @@ export default function Personal() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Send Money Instantly</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Instant Transfers</h3>
               <p className="text-gray-600">
-                Transfer to any bank account in Nigeria. Arrives in seconds, not days.
+                Send money to any bank account in Nigeria. Arrives in seconds, not hours.
               </p>
             </div>
 
@@ -124,9 +151,9 @@ export default function Personal() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Receive Payments</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Your Own Account Number</h3>
               <p className="text-gray-600">
-                Get your own account number. Receive money from anyone, anywhere.
+                Get a dedicated account number. Receive money from anyone, anywhere in Nigeria.
               </p>
             </div>
 
@@ -136,7 +163,7 @@ export default function Personal() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Pay All Your Bills</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Pay All Bills</h3>
               <p className="text-gray-600">
                 Electricity, airtime, data, cable TV, school fees — pay everything from one place.
               </p>
@@ -148,9 +175,9 @@ export default function Personal() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Works on Any Phone</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Works Everywhere</h3>
               <p className="text-gray-600">
-                Smartphone or basic phone — use our app or USSD. Your choice.
+                Use our app on any smartphone, or dial USSD from any phone. Your choice.
               </p>
             </div>
 
@@ -161,9 +188,9 @@ export default function Personal() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Agent Support Nearby</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Cash In/Out Agents</h3>
               <p className="text-gray-600">
-                Need help? Visit one of our agents in your community for cash-in, cash-out, or assistance.
+                Deposit or withdraw cash at any of our agent locations across Nigeria.
               </p>
             </div>
 
@@ -173,9 +200,9 @@ export default function Personal() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Bank-Level Security</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Bank-Grade Security</h3>
               <p className="text-gray-600">
-                Your money is safe. BVN-verified accounts, encrypted transactions, fraud monitoring.
+                BVN verification, encrypted transactions, and 24/7 fraud monitoring.
               </p>
             </div>
           </div>
@@ -187,7 +214,7 @@ export default function Personal() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Open Your Wallet in 3 Minutes
+              Get Started in 3 Minutes
             </h2>
           </div>
 
@@ -198,25 +225,25 @@ export default function Personal() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Sign Up</h3>
               <p className="text-gray-600">
-                Enter your phone number and basic details. That&apos;s all you need to start.
+                Enter your phone number and basic info. Takes less than a minute.
               </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-brand-orange rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
                 2
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Verify</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Verify BVN</h3>
               <p className="text-gray-600">
-                Link your BVN to unlock higher limits and get your dedicated account number.
+                Link your BVN to get your dedicated account number and higher limits.
               </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-brand-green rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
                 3
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Start Using</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Start Transacting</h3>
               <p className="text-gray-600">
-                Fund your wallet and start sending, receiving, and paying bills instantly.
+                Fund your wallet and enjoy instant transfers, bill payments, and more.
               </p>
             </div>
           </div>
@@ -226,21 +253,21 @@ export default function Personal() {
               href="/open-wallet"
               className="inline-block bg-brand-green text-white px-8 py-4 rounded-xl font-semibold hover:bg-brand-green-dark transition-colors text-lg"
             >
-              Get Started Now
+              Create Your Account
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Fees */}
+      {/* Pricing */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              Simple, Honest Pricing
+              Simple, Transparent Fees
             </h2>
             <p className="text-lg text-gray-600 mb-12">
-              No hidden fees. No surprises. You see exactly what you pay.
+              No hidden charges. No monthly fees. You only pay when you transact.
             </p>
             <div className="bg-gray-50 rounded-2xl p-8">
               <div className="grid md:grid-cols-3 gap-8">
@@ -250,11 +277,11 @@ export default function Personal() {
                 </div>
                 <div>
                   <p className="text-3xl font-bold text-brand-green">₦10</p>
-                  <p className="text-gray-600 mt-2">Transfers under ₦5,000</p>
+                  <p className="text-gray-600 mt-2">Transfers up to ₦5,000</p>
                 </div>
                 <div>
                   <p className="text-3xl font-bold text-brand-green">₦25</p>
-                  <p className="text-gray-600 mt-2">Transfers ₦5,000+</p>
+                  <p className="text-gray-600 mt-2">Transfers above ₦5,000</p>
                 </div>
               </div>
             </div>
@@ -262,20 +289,20 @@ export default function Personal() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Final CTA */}
       <section className="py-16 bg-gradient-to-r from-brand-green to-brand-green-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-            Ready to Take Control of Your Money?
+            Ready to Get Started?
           </h2>
           <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of Nigerians already using XpderGlobal for their daily financial needs.
+            Join thousands of Nigerians already enjoying fast, secure digital banking.
           </p>
           <Link
             href="/open-wallet"
             className="inline-block bg-brand-orange text-white px-10 py-4 rounded-xl font-semibold hover:bg-brand-orange-dark transition-colors text-lg"
           >
-            Open Your Wallet Now
+            Open Your Free Account
           </Link>
         </div>
       </section>
